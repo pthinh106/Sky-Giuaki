@@ -1,0 +1,58 @@
+﻿
+@{
+	ViewData["Title"] = "Index";
+}
+<div class="panel panel-default">
+		<div class="panel-heading" style="font-weight: bold;" >Đội bóng
+			<a class="addbutton" href="/crud/create">
+				<button type="button" class="btn btn-md btn-success">Thêm</button>
+			</a>
+			</div>
+		<div class="panel-body">
+			<div class="col-lg-12">
+				<input style="margin-bottom: 10px;" class="form-control" id="myInput1" type="text" placeholder="Search">
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+						<th scope="col">Mã Quốc Gia</th>
+						<th scope="col">Tên Quốc Gia </th>
+						<th scope="col">Số Lượng Cầu Thủ</th>
+						</tr>
+					</thead>
+					<tbody id="Product">
+						<tr>
+						<th scope="row">VN</th>
+						<td>Việt Nam</td>
+						<td>23</td>
+						<td style="width: 225px;">
+							<a href="edit"><button type="button" class="btn btn-md btn-info addbutton">Sửa</button></a>
+							<a href="details"><button type="button" class="btn btn-md btn-default">Xem</button></a>
+							<a href="#"><button type="button" class="btn btn-md btn-danger">Xóa</button></a>
+						</td>
+						</tr>
+						<tr>
+						<th scope="row">VN</th>
+						<td>Việt Nam</td>
+						<td>23</td>
+						<td>
+							<a href="edit"><button type="button" class="btn btn-md btn-info addbutton">Sửa</button></a>
+							<a href="details"><button type="button" class="btn btn-md btn-default">Xem</button></a>
+							<a href="#"><button type="button" class="btn btn-md btn-danger">Xóa</button></a>
+						</td>
+						</tr>
+						<tr>
+						<th scope="row">VN</th>
+						<td>Việt Nam</td>
+						<td>23</td>
+						<td>
+							<a href="edit"><button type="button" class="btn btn-md btn-info addbutton">Sửa</button></a>
+							<a href="details"><button type="button" class="btn btn-md btn-default">Xem</button></a>
+							<a href="#"><button type="button" class="btn btn-md btn-danger">Xóa</button></a>
+						</td>
+						</tr>
+					</tbody>
+					</table>
+			</div>  
+		</div>
+	</div><!-- /.panel-->
+</div><!--/.col-->
