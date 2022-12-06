@@ -1,7 +1,18 @@
+using AutoMapper;
+using Microsoft.EntityFrameworkCore;
+using Sky.Entity;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
 builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews();
+builder.Services.AddControllers();
+builder.Services.AddDbContext<ManageContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("WorldCupDb")).UseLazyLoadingProxies());
+builder.Services.BuildServiceProvider();
 
 var app = builder.Build();
 
