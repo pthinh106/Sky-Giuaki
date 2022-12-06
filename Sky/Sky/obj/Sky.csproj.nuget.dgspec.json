@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Thinh\\2022-2023\\netcore\\Sky\\Sky\\Sky.csproj": {}
+    "C:\\Thinh\\2022-2023\\dotnet\\Sky-Giuaki\\Sky\\Sky\\Sky.csproj": {}
   },
   "projects": {
-    "C:\\Thinh\\2022-2023\\netcore\\Sky\\Sky\\Sky.csproj": {
+    "C:\\Thinh\\2022-2023\\dotnet\\Sky-Giuaki\\Sky\\Sky\\Sky.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Thinh\\2022-2023\\netcore\\Sky\\Sky\\Sky.csproj",
+        "projectUniqueName": "C:\\Thinh\\2022-2023\\dotnet\\Sky-Giuaki\\Sky\\Sky\\Sky.csproj",
         "projectName": "Sky",
-        "projectPath": "C:\\Thinh\\2022-2023\\netcore\\Sky\\Sky\\Sky.csproj",
+        "projectPath": "C:\\Thinh\\2022-2023\\dotnet\\Sky-Giuaki\\Sky\\Sky\\Sky.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Thinh\\2022-2023\\netcore\\Sky\\Sky\\obj\\",
+        "outputPath": "C:\\Thinh\\2022-2023\\dotnet\\Sky-Giuaki\\Sky\\Sky\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,16 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
