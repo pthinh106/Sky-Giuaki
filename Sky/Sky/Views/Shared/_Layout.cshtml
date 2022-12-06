@@ -8,6 +8,7 @@
 	<link href="~/assets/css/font-awesome.min.css" rel="stylesheet">
 	<link href="~/assets/css/datepicker3.css" rel="stylesheet">
 	<link href="~/assets/css/styles.css" rel="stylesheet">
+	<link href="~/css/all.css" rel="stylesheet"/>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Sky.styles.css" asp-append-version="true" />
 </head>
@@ -29,6 +30,7 @@
 				<h1 class="page-header">@ViewData["Title"]</h1>
 			</div>
 		</div><!--/.row-->
+		</div>
 	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
 		<div class="container-fluid">
 			<div class="navbar-header">
@@ -67,15 +69,7 @@
 			<li><a href="#"><em class="fa fa-send-o">&nbsp;</em> Trận đấu</a></li>
 		</ul>
 	</div>
- 
-            @RenderBody()
-
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - Sky - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
+	@RenderBody()
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
