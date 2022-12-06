@@ -1,0 +1,39 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+	ViewData["Title"] = "Edit";
+}
+<div class="panel panel-default">
+	<div class="panel-heading" style="font-weight: bold;">
+		Edit
+		<a class="addbutton" href="/crud/index">
+			<em class="fa fa-close color-red"> Đóng</em>
+		</a>
+	</div>
+	<form id="form" role="form" name="MyForm" action="">
+		<input type="hidden"  value="#"/>
+		<div class="panel-body">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="form-group">
+						<label>Tên Quốc Gia</label>
+						<input type="text" class="form-control" />
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="form-group">
+						<label>Số Lượng Cầu Thủ</label>
+						<input type="number" class="form-control" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="panel-footer">
+			<button type="submit" id="Submit" class="btn btn-lg btn-primary">Submit Button</button>
+		</div>
+	</form>
+</div>
+</div>
