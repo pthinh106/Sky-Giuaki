@@ -1,16 +1,20 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Sky.Entity;
 using Sky.Models;
 using System.Diagnostics;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Sky.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        private readonly ManageContext _db;
+        public HomeController(ILogger<HomeController> logger, ManageContext manageContext)
         {
             _logger = logger;
+            _db = manageContext;
         }
 
         public IActionResult Index()
